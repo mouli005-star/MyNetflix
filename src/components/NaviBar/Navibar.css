@@ -1,0 +1,122 @@
+.navibar {
+  width: 100%;
+   height: 55px;
+  padding: 10px 5%;   /* 🔥 Only change made here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+top : 0;
+  position: fixed;
+  
+
+  font-size: 14px;
+  color: #e5e5e5;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+
+  z-index: 1;
+}
+
+/* --------------------------
+   LEFT SECTION (Logo + Menu)
+   -------------------------- */
+
+.navibar-left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  
+}
+.navibar-left img {
+  width: 100px;
+  cursor: pointer;
+  left: 0;
+}
+
+.navibar-left ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navibar-left ul li {
+  cursor: pointer;
+  
+}
+
+/* --------------------------
+   RIGHT SECTION (Icons)
+   -------------------------- */
+
+.navibar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.navibar-right .icon {
+  width: 35px;
+  cursor: pointer;
+
+  
+}
+
+.navibar-right .bell {
+  width: 30px;
+  cursor: pointer;
+  color: white;
+  
+}
+
+.navibar-right .profile {
+  width: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* --------------------------
+   PROFILE BLOCK
+   -------------------------- */
+
+.navibar-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position : relative;
+}
+
+.navibar-profile .drop {
+      width: 25px;
+      color: white;
+      
+   
+}
+.navibar .dropdown {
+  display: none;
+  position: absolute;
+  top : 100%;
+  right : 0;
+  background-color: #191919;
+  width: max-content;
+  background: #191919;
+  padding : 18px 22px;
+  text-decoration: underline;
+  
+  z-index: 1;
+}
+.navibar .dropdown p{ 
+  font-size: 15px;
+  border-radius: 50%;;
+  font-style: italic;
+  cursor: pointer;
+}
+.navibar-profile:hover .dropdown {
+  display: block;
+}
+

@@ -1,0 +1,68 @@
+.hero { position: relative;
+margin : 0;}
+.bannerimg {
+    width : 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+.herocaption {
+    position : absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+
+}
+
+.captionimg {
+    width: 90%;
+    margin-bottom: 30px;
+    max-width: 420px;
+}
+.herocaption p {
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.herobtns {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.btns {
+    background-color: rgb(185, 45, 45);
+    border: none;
+    color: rgb(14, 0, 0);
+    padding: 10px 25px;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.darkbtns {
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    color: rgb(252, 252, 252);
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btns img, .darkbtns img {
+    width: 20px;
+}
+.btns:hover {
+    background-color: #fffbf5;
+}
+.darkbtns:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
